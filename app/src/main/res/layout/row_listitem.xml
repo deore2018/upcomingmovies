@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivmovie1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY" />
+
+
+    <TextView
+        android:id="@+id/textmovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/ivmovie1"
+        android:text="Movie Name"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textreleasedate"
+        android:layout_below="@+id/textmovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/ivmovie1"
+        android:text="Release Date"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_textfields_price"
+        android:layout_below="@+id/textreleasedate"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/car_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Adult" />
+
+        <TextView
+            android:id="@+id/textmovietype"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+    </LinearLayout>
+</RelativeLayout>

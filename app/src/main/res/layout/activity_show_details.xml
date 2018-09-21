@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activity.ShowDetails">
+
+    <ImageView
+        android:id="@+id/image_movie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"/>
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="190dp"-->
+        <!--android:layout_marginBottom="8dp"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/SliderDots"-->
+        <!--android:layout_below="@+id/viewPager"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center_vertical|center_horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></LinearLayout>-->
+
+    <TextView
+        android:id="@+id/movietitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_movie"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/movie_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:text=""
+        android:maxLines="5"
+        />
+
+    <RatingBar
+        android:id="@+id/pop_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        />
+
+</LinearLayout>
